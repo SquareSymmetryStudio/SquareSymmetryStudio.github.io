@@ -1,21 +1,15 @@
-import { Link } from 'react-router-dom';
-
-import { CaretDownFilled } from '@ant-design/icons';
-
-import ssLogo from '../../images/ss-logo.svg';
+import ssTextLogo from '../../images/ss-text-logo.svg';
 
 function SquareSymmetryHome() {
     return (
         <>
-            <div style={{ height: '90%', textAlign: 'center', fontSize: '25px' }}>
-                <img src={ssLogo} alt='ss-logo'/>
-                <p styles={{ color: 'white', fontWeight: 'bold'}}>SQUARE SYMMETRY Studios</p>
-            </div>
-            <div style={{ height: '10%', textAlign:'center', verticalAlign: 'bottom' }}>
-                <div style={{ color: 'white', fontSize: '12px', }}>ABOUT US</div>
-                <Link to='/about-us'>
-                    <CaretDownFilled style={{ color: '#FF5454', fontSize: '50px'}}/>
-                </Link>
+            <div style={{ 
+                height: '100%', 
+                textAlign: 'center', 
+                fontSize: '25px',
+                padding: '15vh 0 10vh 0',
+            }}>
+                <img src={ssTextLogo} alt='ss-text-logo'/>
             </div>
         </>
     );
