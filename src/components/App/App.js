@@ -17,6 +17,7 @@ const contentStyle = {
   height: '92vh',
   width: '100vw',
   position: 'relative',
+  color: 'white'
 };
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <SquareSymmetryHeader />
         <Content style={ contentStyle }>
           <Switch>
-            <Route path='/'>
+            <Route exact path='/'>
               <SquareSymmetryHome />
             </Route>
             <Route path='/about-us'>
