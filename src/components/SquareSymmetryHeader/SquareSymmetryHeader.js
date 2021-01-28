@@ -1,11 +1,8 @@
-import ssLogo from './images/ss-logo.svg';
-import smallSSLogo from './images/ss-small-logo.svg';
-
-import { Layout, Button, Affix } from 'antd';
-import Icon, { CaretDownFilled } from '@ant-design/icons';
+import { Layout, Button } from 'antd';
 import 'antd/dist/antd.css';
 
-const { Header, Content } = Layout;
+import smallSSLogo from '../../images/ss-small-logo.svg';
+const { Header } = Layout;
 
 const blackButtonStyle = {
   float: 'right',
@@ -44,16 +41,8 @@ const headerStyle = {
   height: '8vh',
 };
 
-const contentStyle = {
-  backgroundColor: '#000000',
-  height: '92vh',
-  width: '100vw',
-  position: 'relative',
-};
-
-function App() {
-  return (
-    <Layout>
+function SquareSymmetryHeader() {
+    return (
       <Header style={ headerStyle } >
         <div style={{
           position: 'relative',
@@ -73,17 +62,7 @@ function App() {
           <Button style={ cyanButtonStyle }>ABOUT US</Button>
         </div>
       </Header>
-      <Content style={ contentStyle }>
-        <div style={{ height: '90%', textAlign: 'center' }}>
-          <img src={ssLogo} alt='ss-logo'/>
-        </div>
-        <div style={{ height: '10%', textAlign:'center', verticalAlign: 'bottom' }}>
-          <div style={{ color: 'white', fontSize: '12px', }}>TO NEXT PAGE</div>
-          <CaretDownFilled style={{ color: '#FF5454', fontSize: '50px'}}/>
-        </div>
-      </Content>
-    </Layout>
-  );
-}
+    );
+};
 
-export default App;
+export default SquareSymmetryHeader;
