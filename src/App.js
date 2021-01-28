@@ -1,7 +1,8 @@
-import logo from './images/ss-logo.svg';
+import ssLogo from './images/ss-logo.svg';
 import smallSSLogo from './images/ss-small-logo.svg';
 
-import { Layout, Button } from 'antd';
+import { Layout, Button, Affix } from 'antd';
+import Icon, { CaretDownFilled } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 
 const { Header, Content } = Layout;
@@ -40,10 +41,14 @@ const headerStyle = {
   backgroundColor: '#373737',
   paddingRight: '15px',
   paddingLeft: '15px',
+  height: '8vh',
 };
 
 const contentStyle = {
   backgroundColor: '#000000',
+  height: '92vh',
+  width: '100vw',
+  position: 'relative',
 };
 
 function App() {
@@ -68,11 +73,15 @@ function App() {
           <Button style={ cyanButtonStyle }>ABOUT US</Button>
         </div>
       </Header>
-      {/*<Content>
-        <div style={ contentStyle }>
-
+      <Content style={ contentStyle }>
+        <div style={{ height: '90%', textAlign: 'center' }}>
+          <img src={ssLogo} alt='ss-logo'/>
         </div>
-      </Content> */}
+        <div style={{ height: '10%', textAlign:'center', verticalAlign: 'bottom' }}>
+          <div style={{ color: 'white', fontSize: '12px', }}>TO NEXT PAGE</div>
+          <CaretDownFilled style={{ color: '#FF5454', fontSize: '50px'}}/>
+        </div>
+      </Content>
     </Layout>
   );
 }
