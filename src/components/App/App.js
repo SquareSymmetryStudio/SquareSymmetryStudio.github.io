@@ -7,8 +7,13 @@ import {
 import { Layout } from 'antd';
 import 'antd/dist/antd.css';
 
-import SquareSymmetryHeader from '../SquareSymmetryHeader';
-import SquareSymmetryHome from '../SquareSymmetryHome';
+import { 
+  Header,
+  Home,
+  AboutUs,
+  Services,
+  Contact
+} from '../SquareSymmetry';
 
 const { Content } = Layout;
 
@@ -24,20 +29,20 @@ function App() {
   return (
     <Layout>
       <Router>
-        <SquareSymmetryHeader />
+        <Header />
         <Content style={ contentStyle }>
           <Switch>
             <Route exact path='/'>
-              <SquareSymmetryHome />
+              <Home />
             </Route>
             <Route path='/about-us'>
-              <div>ABOUT US</div>
+              <AboutUs />
             </Route>
             <Route path='/services'>
-              <div>SERVICES</div>
+              <Services />
             </Route>
             <Route path='/contact'>
-              <div>CONTACT</div>
+              <Contact />
             </Route>
           </Switch>
         </Content>

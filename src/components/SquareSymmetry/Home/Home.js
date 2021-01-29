@@ -1,6 +1,6 @@
-import ssTextLogo from '../../images/ss-text-logo.svg';
+import ssTextLogo from '../../../images/ss-text-logo.svg';
 
-function SquareSymmetryHome() {
+function Home() {
     return (
         <>
             <div style={{ 
@@ -15,4 +15,4 @@ function SquareSymmetryHome() {
     );
 };
 
-export default SquareSymmetryHome;
+export default Home;

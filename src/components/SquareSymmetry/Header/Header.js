@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Button } from 'antd';
 import 'antd/dist/antd.css';
 
-import smallSSLogo from '../../images/ss-small-logo.svg';
+import smallSSLogo from '../../../images/ss-small-logo.svg';
 const { Header } = Layout;
 
 const redButtonStyle = {
@@ -91,4 +91,4 @@ function SquareSymmetryHeader() {
     );
 };
 
-export default SquareSymmetryHeader;
+export { SquareSymmetryHeader };
