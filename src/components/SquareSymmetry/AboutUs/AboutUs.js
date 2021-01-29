@@ -5,6 +5,8 @@ import {
     Image 
 } from 'antd';
 
+import santiM from '../../../images/santi-m.png';
+
 const { Title } = Typography;
 
 const contentTitleStyle = {
@@ -27,6 +29,7 @@ function AboutUs() {
                 <Col span={12}>
                     <Image
                         alt='Santi M image'
+                        src={ santiM }
                         placeholder
                         width={200}
                         height={200}

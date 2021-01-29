@@ -23,6 +23,9 @@ function Contact() {
                 </Col>
             </Row>
             <Row style={{ height: '80%', paddingTop: '1%', paddingLeft: '10%'}}>
+                <Col span={24}>
+                    <p>Contact data</p>
+                </Col>
             </Row>
         </>
     );

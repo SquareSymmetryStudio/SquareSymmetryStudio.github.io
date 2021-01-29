@@ -27,43 +27,37 @@ function Services() {
                     <Row> 
                         <Col span={24}>
                             <Title style={{ fontSize:'35px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Title 1</span>
+                                <span style={{ color: '#30D6E0', marginRight: '10px'}}>Unreal Engine App Development</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <Title style={{ fontSize:'25px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Description 1</span>
-                            </Title>
+                            <p style={{ color: 'white', marginRight: '10px'}}>Description 1</p>
                         </Col>
                     </Row>
                     <Row> 
                         <Col span={24}>
                             <Title style={{ fontSize:'35px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Title 2</span>
+                                <span style={{ color: '#30D6E0', marginRight: '10px'}}>UI/UX design</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <Title style={{ fontSize:'25px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Description 2</span>
-                            </Title>
+                            <p style={{ color: 'white', marginRight: '10px'}}>Description 2</p>
                         </Col>
                     </Row>
                     <Row> 
                         <Col span={24}>
                             <Title style={{ fontSize:'35px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Title 3</span>
+                                <span style={{ color: '#30D6E0', marginRight: '10px'}}>Web Development</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <Title style={{ fontSize:'25px'}}>
-                                <span style={{ color: 'white', marginRight: '10px'}}>Description 3</span>
-                            </Title>
+                            <p style={{ color: 'white', marginRight: '10px'}}>Description 3</p>
                         </Col>
                     </Row>
                 </Col>
