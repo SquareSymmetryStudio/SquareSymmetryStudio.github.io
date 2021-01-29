@@ -6,17 +6,23 @@ import {
 
 const { Title } = Typography;
 
+const contentTitleStyle = {
+    height: '20%', 
+    paddingTop: '5%', 
+    paddingLeft: '10%'
+};
+
 function Services() {
     return (
         <>
-            <Row style={{ height: '20%', paddingTop: '5%', paddingLeft: '15%'}} align='bottom'>
+            <Row style={ contentTitleStyle } align='bottom'>
                 <Col span={24}>
                     <Title style={{ fontSize:'50px'}}>
-                        <span style={{ color: 'white', marginRight: '10px'}}>Services</span>
+                        <span style={{ color: '#FF5454', marginRight: '10px'}}>Services</span>
                     </Title>
                 </Col>
             </Row>
-            <Row style={{ height: '80%', paddingTop: '1%', paddingLeft: '15%'}}>
+            <Row style={{ height: '80%', paddingTop: '1%', paddingLeft: '10%'}}>
                 <Col>
                     <Row> 
                         <Col span={24}>

@@ -8,28 +8,39 @@ import { Layout } from 'antd';
 import 'antd/dist/antd.css';
 
 import { 
-  Header,
+  SquareSymmetryHeader,
   Home,
   AboutUs,
   Services,
   Contact
 } from '../SquareSymmetry';
 
-const { Content } = Layout;
+const { Header, Content } = Layout;
 
 const contentStyle = {
   backgroundColor: '#000000',
-  height: '92vh',
-  width: '100vw',
+  height: '92%',
   position: 'relative',
   color: 'white'
 };
 
+const headerStyle = {
+  backgroundColor: '#373737',
+  height: '8%',
+}
+
+const layoutStyle = {
+  height: '100vh',
+  width: '100vw',
+}
+
 function App() {
   return (
-    <Layout>
+    <Layout style={ layoutStyle } >
       <Router>
-        <Header />
+        <Header style={ headerStyle }>
+          <SquareSymmetryHeader />
+        </Header>
         <Content style={ contentStyle }>
           <Switch>
             <Route exact path='/'>

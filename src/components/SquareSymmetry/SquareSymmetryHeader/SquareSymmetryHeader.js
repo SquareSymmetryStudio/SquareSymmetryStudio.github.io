@@ -1,82 +1,72 @@
 import { Link } from 'react-router-dom';
 
-import { Layout, Button } from 'antd';
+import { Button } from 'antd';
 import 'antd/dist/antd.css';
 
 import smallSSLogo from '../../../images/ss-small-logo.svg';
-const { Header } = Layout;
 
 const redButtonStyle = {
   float: 'right',
-  margin: '15px 15px 15px 0px',
-  height: '34px',
-  width: '128px',
+  width: '20%',
   textAlign: 'left',
   backgroundColor: '#FF5454',
   color: 'white',
   verticalAlign: 'middle',
   fontWeight: 'bold',
-  fontSize: '12px',
-  padding: '5px',
   borderColor: '#FF5454',
+  marginRight: '3%'
 };
 
 const blackButtonStyle = {
   float: 'right',
-  margin: '15px 15px 15px 0px',
-  height: '34px',
-  width: '128px',
+  width: '20%',
   textAlign: 'left',
   backgroundColor: '#000000',
   color: 'white',
   verticalAlign: 'middle',
   fontWeight: 'bold',
-  fontSize: '12px',
-  padding: '5px',
   borderColor: '#000000',
 };
 
 const cyanButtonStyle = {
   float: 'right',
-  margin: '15px 15px 15px 0px',
-  height: '34px',
-  width: '128px',
+  width: '20%',
   backgroundColor: '#30D6E0',
   borderColor: '#30D6E0',
   color: 'white',
-  textAlign: 'left',
-  fontSize: '12px',
   fontWeight: 'bold',
   verticalAlign: 'middle',
-  padding: '5px',
+  marginRight: '3%',
+  textAlign: 'left',
 };
 
-const headerStyle = {
-  backgroundColor: '#373737',
-  paddingRight: '15px',
-  paddingLeft: '15px',
-  height: '8vh',
+const logoStyle = {
+    position: 'relative',
+    float: 'left',
+    height: '100%',
+    width: '50%',
+};
+
+const buttonStyle = { 
+    position: 'relative',
+    float: 'right',
+    height: '100%',
+    width: '50%',
+    padding: '1%',
 };
 
 function SquareSymmetryHeader() {
     return (
-        <Header style={ headerStyle } >
-            <div style={{
-                position: 'relative',
-                float: 'left',
-            }}>
+        <>
+            <div style={ logoStyle }>
                 <Link to='/'>
                     <img 
                         src={ smallSSLogo  } 
                         alt="Square Symmetry small logo"
-                        height='34px'
                     />
                 </Link>
             </div>
-            <div 
-                style={{ 
-                position: 'relative',
-            }}>
+            <div style={ buttonStyle } >
                 <Link to='/contact'>
                     <Button style={ blackButtonStyle }>CONTACT</Button>
                 </Link>
@@ -87,8 +77,8 @@ function SquareSymmetryHeader() {
                     <Button style={ cyanButtonStyle }>ABOUT US</Button>
                 </Link>
             </div>
-      </Header>
+      </>
     );
 };
 
-export { SquareSymmetryHeader };
+export default SquareSymmetryHeader;
