@@ -27,6 +27,8 @@ const contentStyle = {
 const headerStyle = {
   backgroundColor: '#373737',
   height: '8%',
+  paddingRight: '1%',
+  paddingLeft: '1%',
 }
 
 const layoutStyle = {
