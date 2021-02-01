@@ -5,28 +5,25 @@ import {
     Image 
 } from 'antd';
 
+import './AboutUs.css';
+
 import santiM from '../../../images/santi-m.png';
 
 const { Title } = Typography;
 
-const contentTitleStyle = {
-    height: '20%', 
-    paddingTop: '5%', 
-    paddingLeft: '10%'
-};
-
 function AboutUs() {
     return (
         <>
-            <Row style={ contentTitleStyle } align='bottom'>
+            <Row className='title__row' align='bottom'>
                 <Col span={24}>
-                    <Title style={{ fontSize:'50px'}}>
-                        <span style={{ color: '#30D6E0', marginRight: '10px'}}>About us</span>
+                    <Title className='title'>
+                        <span className='cyan'>About us</span>
                     </Title>
                 </Col>
             </Row>
-            <Row style={{ height: '30%', paddingLeft: '10%'}}>
+            <Row className='profiles'>
                 <Col span={12}>
+                    <p>Santi M</p>
                     <Image
                         alt='Santi M image'
                         src={ santiM }
@@ -34,19 +31,18 @@ function AboutUs() {
                         width={200}
                         height={200}
                     />
+                    <p>Santi M's description</p>
                 </Col>
                 <Col span={12}>
+                    <p>Santi O</p>
                     <Image
                         alt='Santi O image'
                         placeholder
                         width={200}
                         height={200}
                     />
+                    <p>Santi O's description</p>
                 </Col>
-            </Row>
-            <Row style={{ height: '50%', paddingLeft: '10%'}}>
-                <Col span={12}>Santi M's description</Col>
-                <Col span={12}>Santi O's description</Col>
             </Row>
         </>
     );

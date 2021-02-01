@@ -3,13 +3,11 @@ import ssTextLogo from '../../../images/ss-text-logo.svg';
 function Home() {
     return (
         <>
-            <div style={{ 
-                height: '100%', 
-                textAlign: 'center', 
-                fontSize: '25px',
-                padding: '15vh 0 10vh 0',
-            }}>
-                <img src={ssTextLogo} alt='ss-text-logo'/>
+            <div className='home__logo__container'>
+                <img 
+                    src={ssTextLogo} 
+                    alt='ss-text-logo'
+                />
             </div>
         </>
     );
