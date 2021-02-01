@@ -1,11 +1,10 @@
-.logo__container {
-    height: 80%;
+.logo__row {
+    height: 100%;
     width: 100%;
     background-color: pink;
 }
 
 .logo {
-    height: 100%;
     text-align: center;
     font-size: 25px;
     padding: 15vh 0 10vh 0;

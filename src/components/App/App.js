@@ -4,11 +4,9 @@ import {
   Route,
 } from 'react-router-dom';
 
-import { Layout } from 'antd';
-
-import 'antd/dist/antd.css';
-import './App.css';
-
+import { 
+  Layout 
+} from 'antd';
 
 import { 
   SquareSymmetryHeader,
@@ -17,6 +15,9 @@ import {
   Services,
   Contact
 } from '../SquareSymmetry';
+
+import 'antd/dist/antd.css';
+import './App.css';
 
 const { Header, Content } = Layout;
 

@@ -10,7 +10,7 @@ import ssTextLogo from '../../../images/ss-text-logo.svg';
 function Home() {
     return (
         <>
-            <Row className='logo__container'>
+            <Row className='logo__row'>
                 <Col span={24}>
                     <img 
                         className='logo'
