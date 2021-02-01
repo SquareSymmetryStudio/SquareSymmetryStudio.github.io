@@ -6,45 +6,33 @@ import 'antd/dist/antd.css';
 import smallSSLogo from '../../../images/ss-small-logo.svg';
 import Text from 'antd/lib/typography/Text';
 
+const basicButtonStyle = {
+    float: 'right',
+    width: '10vh',
+    height: '8vh',
+    color: 'white',
+    verticalAlign: 'middle',
+    textAlign: 'left',
+    fontWeight: 'bold',
+    padding: '0',
+}
+
 const redButtonStyle = {
-  float: 'right',
-  width: '20%',
-  textAlign: 'left',
   backgroundColor: '#FF5454',
-  color: 'white',
-  verticalAlign: 'middle',
-  fontWeight: 'bold',
   borderColor: '#FF5454',
-  marginRight: '3%',
-  fontSize: '66%',
-  height: '100%',
+  ...basicButtonStyle
 };
 
 const blackButtonStyle = {
-  float: 'right',
-  width: '20%',
-  textAlign: 'left',
   backgroundColor: '#000000',
-  color: 'white',
-  verticalAlign: 'middle',
-  fontWeight: 'bold',
   borderColor: '#000000',
-  fontSize: '66%',
-  height: '100%',
+  ...basicButtonStyle
 };
 
 const cyanButtonStyle = {
-  float: 'right',
-  width: '20%',
   backgroundColor: '#30D6E0',
   borderColor: '#30D6E0',
-  color: 'white',
-  fontWeight: 'bold',
-  verticalAlign: 'middle',
-  marginRight: '3%',
-  textAlign: 'left',
-  fontSize: '66%',
-  height: '100%'
+  ...basicButtonStyle
 };
 
 const logoNameContainerStyle = {
@@ -59,7 +47,7 @@ const buttonContainerStyle = {
     float: 'right',
     height: '100%',
     width: '50%',
-    padding: '1%',
+    backgroundColor: 'pink',
 };
 
 const nameContainerStyle = {
