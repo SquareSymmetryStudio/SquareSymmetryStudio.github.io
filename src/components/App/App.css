@@ -13,7 +13,6 @@
 }
 
 .App-content {
-  background-color: #000000;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -23,12 +22,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-content {
+  height: 92%;
+  position: relative;
+  background-color: #000000;
 }
 
-.wipText {
-  color: white;
-  font-size: calc(6px + 2vmin);
-  width: 400px;
+.app-header {
+  background-color: #373737;
+  height: 8%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.app-layout {
+  height: 100vh;
+  width: 100vw;
 }
