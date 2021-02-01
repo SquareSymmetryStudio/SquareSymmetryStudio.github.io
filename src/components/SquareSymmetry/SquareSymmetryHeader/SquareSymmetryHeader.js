@@ -3,72 +3,16 @@ import { Link } from 'react-router-dom';
 import { Button, Row, } from 'antd';
 import 'antd/dist/antd.css';
 
+import './SquareSymmetryHeader.css';
+
 import smallSSLogo from '../../../images/ss-small-logo.svg';
 import Text from 'antd/lib/typography/Text';
-
-const basicButtonStyle = {
-    float: 'right',
-    width: '10vh',
-    height: '8vh',
-    color: 'white',
-    verticalAlign: 'middle',
-    textAlign: 'left',
-    fontWeight: 'bold',
-    padding: '0',
-}
-
-const redButtonStyle = {
-  backgroundColor: '#FF5454',
-  borderColor: '#FF5454',
-  ...basicButtonStyle
-};
-
-const blackButtonStyle = {
-  backgroundColor: '#000000',
-  borderColor: '#000000',
-  ...basicButtonStyle
-};
-
-const cyanButtonStyle = {
-  backgroundColor: '#30D6E0',
-  borderColor: '#30D6E0',
-  ...basicButtonStyle
-};
-
-const logoNameContainerStyle = {
-    position: 'relative',
-    float: 'left',
-    height: '100%',
-    width: '50%',
-};
-
-const buttonContainerStyle = { 
-    position: 'relative',
-    float: 'right',
-    height: '100%',
-    width: '50%',
-    backgroundColor: 'pink',
-};
-
-const nameContainerStyle = {
-    float: 'left',
-    position: 'relative',
-    fontSize: '100%',
-    height: '100%',
-    width: '80%'
-}
-
-const logoContainerStyle = {
-    float: 'left',
-    width: '10%',
-    height: '100%'
-}
 
 function SquareSymmetryHeader() {
     return (
         <>
-            <div style={ logoNameContainerStyle }>
-                <div style={ logoContainerStyle }>
+            <div className='logo-name__container'>
+                <div className='logo__container'>
                     <Link to='/'>
                         <img 
                             src={ smallSSLogo  } 
@@ -76,21 +20,21 @@ function SquareSymmetryHeader() {
                         />
                     </Link>   
                 </div> 
-                <div style={ nameContainerStyle }>
-                        <Text style={{ color: '#30D6E0', marginRight: '1%'}}>SQUARE</Text>
-                        <Text style={{ color: '#FF5454', marginRight: '1%' }}>SYMMETRY</Text>
-                        <Text style={{ color: 'white' }}>Studio</Text>
+                <div className='name__container'>
+                    <Text className='text cyan'>SQUARE</Text>
+                    <Text className='text red'>SYMMETRY</Text>
+                    <Text className='text white'>Studio</Text>
                 </div>
             </div>
-            <div style={ buttonContainerStyle } >
+            <div className='button__container'>
                 <Link to='/contact'>
-                    <Button style={ blackButtonStyle }>CONTACT</Button>
+                    <Button className='ss-button black-button white'>CONTACT</Button>
                 </Link>
                 <Link to='/services'>
-                    <Button style={ redButtonStyle }>SERVICES</Button>
+                    <Button className='ss-button red-button white'>SERVICES</Button>
                 </Link>
                 <Link to='/about-us'>
-                    <Button style={ cyanButtonStyle }>ABOUT US</Button>
+                    <Button className='ss-button cyan-button white'>ABOUT US</Button>
                 </Link>
             </div>
       </>
