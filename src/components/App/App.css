@@ -31,9 +31,11 @@
 
 .app-header {
   background-color: #373737;
-  height: 8%;
-  padding-right: 1%;
-  padding-left: 1%;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+  /*padding-right: 1%;
+  padding-left: 1%;*/
 }
 
 .app-layout {

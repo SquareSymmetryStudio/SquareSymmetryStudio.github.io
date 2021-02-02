@@ -1,11 +1,16 @@
 .logo__row {
     height: 100%;
     width: 100%;
-    background-color: pink;
+    background-color: blue;
+    text-align: center;
+    justify-content: center;
 }
-
 .logo {
     text-align: center;
     font-size: 25px;
-    padding: 15vh 0 10vh 0;
+    height: 50%;
+    width: 50%;
+    background-color: blueviolet;
+    top: 150px;
+    position: relative;
 }
