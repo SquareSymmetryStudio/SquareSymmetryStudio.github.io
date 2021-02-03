@@ -17,3 +17,7 @@
 .white {
     color: #000000;
 }
+.submitButton {
+    background-color: #FF5454 !important;
+    border-color: #FF5454 !important
+}

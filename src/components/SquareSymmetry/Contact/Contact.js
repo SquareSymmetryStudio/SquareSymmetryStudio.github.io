@@ -7,6 +7,8 @@ import {
     Button,
 } from 'antd';
 
+import './Contact.css';
+
 const { Title } = Typography;
 
 function Contact() {
@@ -23,16 +25,16 @@ function Contact() {
                 <Col span={12}>
                     <Form >
                         <Form.Item>
-                            <Input placeholder="Full Name" />
+                            <Input placeholder="Full Name"/>
                         </Form.Item>
                         <Form.Item>
                             <Input placeholder="Subject" />
                         </Form.Item>
                         <Form.Item>
-                            <Input.TextArea rows={4} placeholder="Message"/>
+                            <Input.TextArea rows={6} placeholder="Message"/>
                         </Form.Item>
                         <Form.Item>
-                            <Button type="primary" htmlType="submit">Submit</Button>
+                            <Button className='submitButton' type="primary" htmlType="submit">Submit</Button>
                         </Form.Item>
                     </Form>
                 </Col>

@@ -26,6 +26,7 @@ function SquareSymmetryHeader() {
                 </div>
             </div>
             <div className='button__container'>
+                <div className='div_button_container'>
                 <Link to='/contact'>
                     <Button className='ss-button black-button white'>CONTACT</Button>
                 </Link>
@@ -35,6 +36,7 @@ function SquareSymmetryHeader() {
                 <Link to='/about-us'>
                     <Button className='ss-button cyan-button white'>ABOUT US</Button>
                 </Link>
+                </div>
             </div>
       </>
     );

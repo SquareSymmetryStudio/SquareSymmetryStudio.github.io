@@ -1,7 +1,7 @@
 .logo__row {
     height: 100%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     text-align: center;
     justify-content: center;
 }
@@ -10,7 +10,7 @@
     font-size: 25px;
     height: 50%;
     width: 50%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     top: 150px;
     position: relative;
 }
