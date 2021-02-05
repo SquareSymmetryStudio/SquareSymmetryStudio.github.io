@@ -2,14 +2,13 @@ import {
     Typography, 
     Col, 
     Row, 
-    Input,
-    Form,
-    Button,
+    Anchor
 } from 'antd';
 
 import './Contact.css';
 
 const { Title } = Typography;
+const { Link } = Anchor;
 
 function Contact() {
     return (
@@ -23,20 +22,18 @@ function Contact() {
             </Row>
             <Row className='content__row'>
                 <Col span={12}>
-                    <Form >
-                        <Form.Item>
-                            <Input placeholder="Full Name"/>
-                        </Form.Item>
-                        <Form.Item>
-                            <Input placeholder="Subject" />
-                        </Form.Item>
-                        <Form.Item>
-                            <Input.TextArea rows={6} placeholder="Message"/>
-                        </Form.Item>
-                        <Form.Item>
-                            <Button className='submitButton' type="primary" htmlType="submit">Submit</Button>
-                        </Form.Item>
-                    </Form>
+                    <Row> 
+                        <Col span={24}> 
+                            <span className="mailTitle">Mail:</span>
+                            <a 
+                                className="contactMail" 
+                                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=squaresymmetrystudio@gmail.com" 
+                                target="_blank"
+                            >
+                                squaresymmetrystudio@gmail.com
+                            </a>
+                        </Col>  
+                    </Row>
                 </Col>
             </Row>
         </>

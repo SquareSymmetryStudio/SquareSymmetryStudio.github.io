@@ -22,7 +22,7 @@ function AboutUs() {
                 </Col>
             </Row>
             <Row className='profiles'>
-                <Col span={12}>
+                <Col span={3}>
                     <p>Santi M</p>
                     <Image
                         alt='Santi M image'
@@ -33,7 +33,7 @@ function AboutUs() {
                     />
                     <p>Santi M's description</p>
                 </Col>
-                <Col span={12}>
+                <Col span={3}>
                     <p>Santi O</p>
                     <Image
                         alt='Santi O image'
@@ -42,6 +42,8 @@ function AboutUs() {
                         height={200}
                     />
                     <p>Santi O's description</p>
+                </Col>
+                <Col style={{ backgroundColor: 'pink' }} span={18}>
                 </Col>
             </Row>
         </>
