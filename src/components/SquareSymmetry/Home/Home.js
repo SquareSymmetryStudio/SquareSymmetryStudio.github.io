@@ -9,19 +9,17 @@ import ssTextLogo from '../../../images/ss-text-logo.svg';
 
 function Home() {
     return (
-        <>
-            <Row className='logo__row'>
-                <Col 
-                    span={24}
-                >
-                    <img 
-                        className='logo'
-                        src={ssTextLogo} 
-                        alt='ss-text-logo'
-                    /> 
-                </Col>
-            </Row>
-        </>
+        <Row className='app-row'> 
+            <Col 
+                span={24}
+            >
+                <img 
+                    className='logo'
+                    src={ssTextLogo} 
+                    alt='ss-text-logo'
+                /> 
+            </Col>
+        </Row>
     );
 };
 

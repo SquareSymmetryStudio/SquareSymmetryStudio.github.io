@@ -1,11 +1,5 @@
 import { 
-  BrowserRouter as Router, 
-  Switch, 
-  Route,
-} from 'react-router-dom';
-
-import { 
-  Layout 
+  Layout,
 } from 'antd';
 
 import { 
@@ -24,27 +18,15 @@ const { Header, Content } = Layout;
 function App() {
   return (
     <Layout className='app-layout'>
-      <Router>
         <Header className='app-header'>
           <SquareSymmetryHeader />
         </Header>
         <Content className='app-content'>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route path='/about-us'>
-              <AboutUs />
-            </Route>
-            <Route path='/services'>
-              <Services />
-            </Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-          </Switch>
+          <Home />
+          <AboutUs />
+          <Services />
+          <Contact />
         </Content>
-      </Router> 
     </Layout>
   );
 }
