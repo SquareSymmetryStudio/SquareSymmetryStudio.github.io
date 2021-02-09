@@ -8,6 +8,11 @@ import {
 import './AboutUs.css';
 
 import santiM from '../../../images/santi-m.png';
+import {
+    ssText,
+    mText,
+    oText,
+} from './AboutUsTexts.js';
 
 const { Title } = Typography;
 
@@ -31,7 +36,7 @@ function AboutUs() {
                         width={200}
                         height={200}
                     />
-                    <p>Santi M's description</p>
+                    <p className='white'>{ mText }</p>
                 </Col>
                 <Col span={12}>
                     <p>Santi O</p>
@@ -41,7 +46,7 @@ function AboutUs() {
                         width={200}
                         height={200}
                     />
-                    <p>Santi O's description</p>
+                    <p className='white'>{ oText }</p>
                 </Col>
             </Row>
         </>

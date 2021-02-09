@@ -5,6 +5,12 @@ import {
 } from 'antd';
 
 import './Services.css'
+import { 
+    ueText,
+    uiuxText,
+    webdevText,
+    servicesIntroduction,
+} from './ServicesTexts';
 
 const { Title } = Typography;
 
@@ -29,8 +35,7 @@ function Services() {
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <p className='white'>We provide development of custom software using Unreal Engine 4
-                            for VR experiences, Art installations, Interactive experiences<br></br> and pre-visualization for video production.</p>
+                            <p className='white'>{ ueText }</p>
                         </Col>
                     </Row>
                     <Row> 
@@ -42,8 +47,7 @@ function Services() {
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <p className='white'>We can design, create and animate your Mobile App or Website User Interface, to achieve
-                            <br></br> the best experience and communication with your users</p>
+                            <p className='white'>{ uiuxText }</p>
                         </Col>
                     </Row>
                     <Row> 
@@ -55,8 +59,7 @@ function Services() {
                     </Row>
                     <Row> 
                         <Col span={24}>
-                            <p className='white'> We can create a fully functional Website and Web App tailored to show the best of what you offer to your potential clients.
-                            <br></br> We use technologies like React, Electron and Three.js</p>
+                            <p className='white'>{ webdevText }</p>
                         </Col>
                     </Row>
                 </Col>
