@@ -1,15 +1,14 @@
 const servicesIntroduction = `
-    Power-up your mobile and web apps with us. The services we provide are:
+    Level-up your ideas with us ! 
 `;
 
 const ueText = `
     Game Development & Miscellaneous services using unreal engine such as:
-    VR experiences, Interactive Experiences, Art installations, Real-Time environments for film & production.
-
+    VR experiences, Interactive Experiences, Art installations and Real-Time environments for film & production.
 `;
 
 const uiuxText = `
-    We design, create and animate your Mobile App or Webiste User Interfaces in order to improve user interactin.
+    We design, create and animate your Mobile App experiences. We help you power-up user interaction in your UIs as well.
 `;
 
 const webdevText = `

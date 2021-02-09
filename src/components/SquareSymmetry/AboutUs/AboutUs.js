@@ -20,15 +20,25 @@ function AboutUs() {
     return (
         <>
             <Row className='title__row' align='bottom'>
-                <Col span={24}>
+                <Col 
+                    span={24}
+                >
                     <Title className='title'>
                         <span className='cyan'>About us</span>
                     </Title>
                 </Col>
             </Row>
+            <Row className='about-us-row'>
+                <Col 
+                    span={24}
+                >
+                    <span className='white'>{ ssText }</span>
+                </Col>
+            </Row>
             <Row className='profiles'>
-                <Col span={12}>
-                    <p>Santi M</p>
+                <Col 
+                    span={12}
+                >
                     <Image
                         alt='Santi M image'
                         src={ santiM }
@@ -38,8 +48,9 @@ function AboutUs() {
                     />
                     <p className='white'>{ mText }</p>
                 </Col>
-                <Col span={12}>
-                    <p>Santi O</p>
+                <Col 
+                    span={12}
+                >
                     <Image
                         alt='Santi O image'
                         placeholder

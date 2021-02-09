@@ -18,7 +18,9 @@ function Services() {
     return (
         <>
             <Row className='title__row' align='bottom'>
-                <Col span={24}>
+                <Col 
+                    span={24}
+                >
                     <Title className='title red'>
                         Services
                     </Title>
@@ -26,39 +28,58 @@ function Services() {
             </Row>
             <Row className='content__row'>
                 <Col>
+                    <Row>
+                        <Col 
+                            span={24}
+                        >
+                            <p className='white'>{servicesIntroduction}</p>
+                        </Col>
+                    </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col 
+                            span={24}
+                        >
                             <Title className='sub-title'>
                                 <span className='cyan'>Unreal Engine 4 Development</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col 
+                            span={24}
+                        >
                             <p className='white'>{ ueText }</p>
                         </Col>
                     </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col 
+                            span={24}
+                        >
                             <Title className='sub-title'>
                                 <span className='cyan'>UI/UX design</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col 
+                            span={24}
+                        >
                             <p className='white'>{ uiuxText }</p>
                         </Col>
                     </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col   
+                            span={24}
+                        >
                             <Title className='sub-title'>
                                 <span className='cyan'>Web Development</span>
                             </Title>
                         </Col>  
                     </Row>
                     <Row> 
-                        <Col span={24}>
+                        <Col 
+                            span={24}
+                        >
                             <p className='white'>{ webdevText }</p>
                         </Col>
                     </Row>

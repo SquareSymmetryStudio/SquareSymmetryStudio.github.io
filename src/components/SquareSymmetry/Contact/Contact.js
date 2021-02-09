@@ -2,41 +2,35 @@ import {
     Typography, 
     Col, 
     Row, 
-    Input,
-    Form,
-    Button,
 } from 'antd';
 
 import './Contact.css';
+import { 
+    contactText 
+} from './ContactTexts';
 
 const { Title } = Typography;
 
 function Contact() {
     return (
         <>
-            <Row className='title__row'align='bottom'>
-                <Col span={24}>
+            <Row 
+                className='title__row' 
+                align='bottom'
+            >
+                <Col 
+                    span={24}
+                >
                     <Title className='title'>
                         <span className='white'>Contact</span>
                     </Title>
                 </Col>
             </Row>
             <Row className='content__row'>
-                <Col span={12}>
-                    <Form >
-                        <Form.Item>
-                            <Input placeholder="Full Name"/>
-                        </Form.Item>
-                        <Form.Item>
-                            <Input placeholder="Subject" />
-                        </Form.Item>
-                        <Form.Item>
-                            <Input.TextArea rows={6} placeholder="Message"/>
-                        </Form.Item>
-                        <Form.Item>
-                            <Button className='submitButton' type="primary" htmlType="submit">Submit</Button>
-                        </Form.Item>
-                    </Form>
+                <Col 
+                    span={12}
+                >
+                    <p className='white'>{ contactText }</p>
                 </Col>
             </Row>
         </>

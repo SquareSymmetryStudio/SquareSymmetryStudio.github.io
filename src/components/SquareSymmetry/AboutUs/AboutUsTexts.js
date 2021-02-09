@@ -1,13 +1,11 @@
 const ssText = `
-    SquareSymmetry studio is a development studio based on the idea that gaming and software devleopment should be fun while producing professional results.
-    Our goal is to make each person belonging to the studio complement each other while strengthening their personal capabilities in order to achieve great results and client's satisfaction.
+    SquareSymmetry is a studio based on the idea that Game design and Software development should be fun while producing professional results.
 `;
 
 const mText = `
-    Electronics & Software Engineer, passionate for game and software development.
-    Since his childhood he was always curious and keen on learning  new things outside his field of study.
-    He loves reading, playing guitar and video games. 
-    He is currently working on expanding his management and software & game development skills to be able to cope with constant changes and continous improvement.
+    Electronics & Software Engineer, for everything that is technology.
+    He is curious to learn new things even if they are outside of his field of study.
+    He is currently working on expanding his Project Management and Programming skills to be able to cope with constant changes and continous learning.
 `;
 
 const oText = `

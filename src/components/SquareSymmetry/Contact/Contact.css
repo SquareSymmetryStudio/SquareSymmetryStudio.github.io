@@ -15,8 +15,9 @@
 }
 
 .white {
-    color: #000000;
+    color: white;
 }
+
 .submitButton {
     background-color: #FF5454 !important;
     border-color: #FF5454 !important
