@@ -1,20 +1,17 @@
 .app-content {
-  height: 100vh;
-  padding-top: 10vh;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
   background-color: #000000;
 }
 
 .app-header {
   background-color: #373737;
-  height: 10vh;
-  padding: 0px;
-  margin: 0px;
   position: fixed;
   width: 100vw;
   z-index: 1;
 }
 
 .app-row {
-  height: 100vh;
+  height: 100%;
   background-color: #000000;
 }
