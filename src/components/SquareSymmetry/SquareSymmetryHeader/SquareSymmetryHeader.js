@@ -15,19 +15,18 @@ function SquareSymmetryHeader() {
     return (
         <>
             <Col span={1}>
-                <Link to='/'>
-                    <Image
-                        src={ smallSSLogo  } 
-                        alt="Square Symmetry small logo"
-                    />
-                </Link>
+                <Image
+                    src={ smallSSLogo  } 
+                    alt="Square Symmetry small logo"
+                    preview={ false }
+                />
             </Col>
-            <Col span={6}>   
-                <Text className='text cyan'>SQUARE</Text>
-                <Text className='text red'>SYMMETRY</Text>
-                <Text className='text white'>Studio</Text>
+            <Col span={5} style={{ fontSize:'12px'}}>   
+                <Text className='cyan'>SQUARE</Text>
+                <Text className='red'>SYMMETRY</Text>
+                <Text className='white'>Studio</Text>
             </Col>
-            <Col span={17}>
+            <Col span={18}>
                 <Link to='/contact'>
                     <Button className='ss-button black-button white'>CONTACT</Button>
                 </Link>
@@ -36,6 +35,9 @@ function SquareSymmetryHeader() {
                 </Link>
                 <Link to='/about-us'>
                     <Button className='ss-button cyan-button white'>ABOUT US</Button>
+                </Link>
+                <Link to='/'>
+                    <Button className='ss-button black-button white'>HOME</Button>
                 </Link>
             </Col>
         </>

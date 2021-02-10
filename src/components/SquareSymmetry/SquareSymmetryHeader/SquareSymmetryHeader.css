@@ -1,14 +1,10 @@
 .ss-button {
     float: right;
-    min-width: 25% !important;
-    min-height: 8% !important;
+    width: 20% !important;
     text-align: left !important;
     font-weight: bolder !important;
-    font-size: 62% !important;
-    margin: 5px !important;
-    /* padding-left: 0.5% !important; */
-    top: 25% !important;
-    right: 10px;
+    font-size: 65% !important;
+    margin-right: 5px !important;
 }
 
 .white {

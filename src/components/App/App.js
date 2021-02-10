@@ -27,7 +27,7 @@ function App() {
     <Layout>
       <Router>
         <Header className='app-header'>
-          <Row className='header-row' align='middle'>
+          <Row className='app-header__row' align='middle'>
             <SquareSymmetryHeader />
           </Row>
         </Header>
