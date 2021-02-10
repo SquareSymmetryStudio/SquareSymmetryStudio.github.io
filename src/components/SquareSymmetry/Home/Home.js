@@ -13,6 +13,7 @@ function Home() {
             <Image 
                 src={ssTextLogo} 
                 alt='ss-text-logo'
+                preview={false}
             /> 
         </Col>
     );
