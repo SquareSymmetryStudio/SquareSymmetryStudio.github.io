@@ -1,11 +1,6 @@
 import { 
     Typography, 
-    Col, 
-<<<<<<< HEAD
-=======
-    Row, 
-    Anchor
->>>>>>> origin/mail
+    Col,
 } from 'antd';
 
 import './Contact.css';
@@ -14,7 +9,6 @@ import {
 } from './ContactTexts';
 
 const { Title } = Typography;
-const { Link } = Anchor;
 
 function Contact() {
     return (
@@ -26,6 +20,15 @@ function Contact() {
             </Col>
             <Col span={24}>
                 <p className='white'>{ contactText }</p>
+                <span className="mailTitle">Mail:</span>
+                <a 
+                    className="contactMail" 
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=squaresymmetrystudio@gmail.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    squaresymmetrystudio@gmail.com
+                </a>
             </Col>
         </>
     );
