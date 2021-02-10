@@ -1,6 +1,11 @@
 import { 
     Typography, 
     Col, 
+<<<<<<< HEAD
+=======
+    Row, 
+    Anchor
+>>>>>>> origin/mail
 } from 'antd';
 
 import './Contact.css';
@@ -9,6 +14,7 @@ import {
 } from './ContactTexts';
 
 const { Title } = Typography;
+const { Link } = Anchor;
 
 function Contact() {
     return (
