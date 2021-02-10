@@ -1,24 +1,7 @@
-.title__row {
-    height: 20%;
-    padding-top: 5%;
-    padding-left: 10%;
-}
-
-.content__row {
-    height: 80%;
-    padding-top: 1%;
-    padding-left: 10%;
-}
-
 .title {
     font-size: 50px;
 }
 
 .white {
     color: white;
-}
-
-.submitButton {
-    background-color: #FF5454 !important;
-    border-color: #FF5454 !important
 }

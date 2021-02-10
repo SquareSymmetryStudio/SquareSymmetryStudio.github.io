@@ -5,7 +5,8 @@ import {
 } from 'react-router-dom';
 
 import { 
-  Layout 
+  Layout,
+  Row,
 } from 'antd';
 
 import { 
@@ -23,26 +24,30 @@ const { Header, Content } = Layout;
 
 function App() {
   return (
-    <Layout className='app-layout'>
+    <Layout>
       <Router>
         <Header className='app-header'>
-          <SquareSymmetryHeader />
+          <Row className='header-row' align='middle'>
+            <SquareSymmetryHeader />
+          </Row>
         </Header>
         <Content className='app-content'>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route path='/about-us'>
-              <AboutUs />
-            </Route>
-            <Route path='/services'>
-              <Services />
-            </Route>
-            <Route path='/contact'>
-              <Contact />
-            </Route>
-          </Switch>
+          <Row className='app-content__row'>
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+              <Route path='/about-us'>
+                <AboutUs />
+              </Route>
+              <Route path='/services'>
+                <Services />
+              </Route>
+              <Route path='/contact'>
+                <Contact />
+              </Route>
+            </Switch>
+          </Row>
         </Content>
       </Router> 
     </Layout>

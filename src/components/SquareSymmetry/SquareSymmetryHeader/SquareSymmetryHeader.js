@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
-import { Button } from 'antd';
+import { 
+    Button, 
+    Col, 
+    Image,
+} from 'antd';
 
 import './SquareSymmetryHeader.css';
 
@@ -10,23 +14,20 @@ import Text from 'antd/lib/typography/Text';
 function SquareSymmetryHeader() {
     return (
         <>
-            <div className='logo-name__container'>
-                <div className='logo__container'>
-                    <Link to='/'>
-                        <img 
-                            src={ smallSSLogo  } 
-                            alt="Square Symmetry small logo"
-                        />
-                    </Link>   
-                </div> 
-                <div className='name__container'>
-                    <Text className='text cyan'>SQUARE</Text>
-                    <Text className='text red'>SYMMETRY</Text>
-                    <Text className='text white'>Studio</Text>
-                </div>
-            </div>
-            <div className='button__container'>
-                <div className='div_button_container'>
+            <Col span={1}>
+                <Link to='/'>
+                    <Image
+                        src={ smallSSLogo  } 
+                        alt="Square Symmetry small logo"
+                    />
+                </Link>
+            </Col>
+            <Col span={6}>   
+                <Text className='text cyan'>SQUARE</Text>
+                <Text className='text red'>SYMMETRY</Text>
+                <Text className='text white'>Studio</Text>
+            </Col>
+            <Col span={17}>
                 <Link to='/contact'>
                     <Button className='ss-button black-button white'>CONTACT</Button>
                 </Link>
@@ -36,9 +37,8 @@ function SquareSymmetryHeader() {
                 <Link to='/about-us'>
                     <Button className='ss-button cyan-button white'>ABOUT US</Button>
                 </Link>
-                </div>
-            </div>
-      </>
+            </Col>
+        </>
     );
 };
 
