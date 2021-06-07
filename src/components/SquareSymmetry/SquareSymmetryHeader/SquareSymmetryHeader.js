@@ -2,9 +2,9 @@
 import { 
     Button, 
     Col, 
-    Row
+    Row,
+    Image, 
 } from 'antd';
-
 
 import './SquareSymmetryHeader.css';
 
@@ -16,7 +16,8 @@ function SquareSymmetryHeader() {
     return (
         <Row>
             <Col span={2}>
-                <img 
+                 <Image
+                    preview={false}
                     src={ smallSSLogo  } 
                     alt="Square Symmetry small logo"
                 />
@@ -27,9 +28,30 @@ function SquareSymmetryHeader() {
                 <Text className='text white'>Studio</Text>
             </Col>
             <Col span={18}>
-                <Button className='ss-button black-button white' href='#contact'>CONTACT</Button>
-                <Button className='ss-button red-button white' href='#services'>SERVICES</Button>
-                <Button className='ss-button cyan-button white' href='#about-us'>ABOUT US</Button>
+                <Button 
+                    className='ss-button black-button white' 
+                    href='#contact'
+                >
+                    CONTACT
+                </Button>
+                <Button 
+                    className='ss-button red-button white'
+                    href='#services'
+                >
+                    SERVICES
+                </Button>
+                <Button 
+                    className='ss-button cyan-button white'
+                    href='#about-us'
+                >
+                    ABOUT US
+                </Button>
+                <Button 
+                    className='ss-button black-button white' 
+                    href='#home'
+                >
+                    HOME
+                </Button>
             </Col>
         </Row>
     );

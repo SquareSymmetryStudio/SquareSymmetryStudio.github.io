@@ -1,5 +1,6 @@
 import { 
   Layout,
+  Row,
 } from 'antd';
 
 import { 
@@ -22,10 +23,29 @@ function App() {
           <SquareSymmetryHeader />
         </Header>
         <Content className='app-content'>
-          <Home />
-          <AboutUs id="about-us"/>
-          <Services id="services"/>
-          <Contact id="contact"/>
+          <Row 
+            className='app-row' 
+            id='home'
+          >
+            <Home />
+          </Row>
+          <Row 
+            className='app-row'
+            id='about-us'
+          >
+            <AboutUs />
+          </Row>
+          <Row 
+            className='app-row'
+            id='services'>
+            <Services />
+          </Row>          
+          <Row
+            className='app-row' 
+            id='contact'
+          >
+            <Contact/>
+          </Row>          
         </Content>
     </Layout>
   );
