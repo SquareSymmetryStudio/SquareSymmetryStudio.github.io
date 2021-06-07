@@ -23,9 +23,9 @@ function App() {
         </Header>
         <Content className='app-content'>
           <Home />
-          <AboutUs />
-          <Services />
-          <Contact />
+          <AboutUs id="about-us"/>
+          <Services id="services"/>
+          <Contact id="contact"/>
         </Content>
     </Layout>
   );

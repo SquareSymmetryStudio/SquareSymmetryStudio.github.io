@@ -11,9 +11,9 @@ import {
 
 const { Title } = Typography;
 
-function Contact() {
+function Contact(props) {
     return (
-        <Row className='app-row'> 
+        <Row className='app-row' id={props.id}> 
             <Col 
                 span={24}
             >

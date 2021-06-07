@@ -8,9 +8,9 @@ import './Home.css'
 
 import ssTextLogo from '../../../images/ss-text-logo.svg';
 
-function Home() {
+function Home(props) {
     return (
-        <Row className='app-row'> 
+        <Row className='app-row' id={props.id}> 
             <Col
                 className='logo' 
                 span={24}

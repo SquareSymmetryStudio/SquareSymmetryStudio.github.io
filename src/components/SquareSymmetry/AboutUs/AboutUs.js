@@ -16,9 +16,9 @@ import {
 
 const { Title } = Typography;
 
-function AboutUs() {
+function AboutUs(props) {
     return (
-        <Row className='app-row'>
+        <Row className='app-row' id={props.id}>
             <Col 
                 span={24}
             >
