@@ -9,13 +9,13 @@ import {
   Row,
 } from 'antd';
 
+import SquareSymmetryHeader from './header';
 import { 
-  SquareSymmetryHeader,
-  Home,
   AboutUs,
   Services,
+  Home, 
   Contact
-} from '../SquareSymmetry';
+} from './sections';
 
 import 'antd/dist/antd.css';
 import './App.css';
