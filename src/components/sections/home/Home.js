@@ -8,7 +8,7 @@ import {
 import './Home.css'
 
 import ssTextLogo from '../../../images/ss-text-logo.svg';
-import Design from '../Design';
+import Cube from '../../designs/Cube';
 
 function Home() {
     return (
@@ -21,8 +21,7 @@ function Home() {
                 /> 
             </Row>
             <Row>
-                <div id="myThree"></div>
-                <Design ></Design>
+                <Cube></Cube>
             </Row>
         </Col>
     );

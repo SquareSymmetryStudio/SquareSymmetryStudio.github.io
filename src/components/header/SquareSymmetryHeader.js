@@ -8,7 +8,7 @@ import {
 
 import './SquareSymmetryHeader.css';
 
-import smallSSLogo from '../../../images/ss-small-logo.svg';
+import smallSSLogo from '../../images/ss-small-logo.svg';
 import Text from 'antd/lib/typography/Text';
 
 function SquareSymmetryHeader() {
