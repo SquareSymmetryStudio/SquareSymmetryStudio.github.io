@@ -1,0 +1,15 @@
+.app-header {
+  background-color: #373737;
+}
+
+.app-content {
+  height: calc(100vh - 64px);
+  position: relative;
+  background-color: #000000;
+}
+
+.app-content__row {
+  margin-top: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+}

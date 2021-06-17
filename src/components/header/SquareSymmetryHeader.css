@@ -1,0 +1,42 @@
+.ss-button {
+    float: right;
+    width: 20% !important;
+    text-align: left !important;
+    font-weight: bolder !important;
+    font-size: 65% !important;
+    margin-right: 5px !important;
+}
+
+.white {
+    color: #FFFFFF !important;
+}
+
+.red {
+    color: #FF5454 !important;
+    font-size: 100%;
+}
+
+.black{
+    color: #000000 !important;
+    font-size: 100%;
+}
+
+.cyan {
+    color: #30D6E0 !important;
+    font-size: 100%;
+}
+
+.red-button {
+    background-color: #FF5454 !important;
+    border-color: #FF5454 !important;
+}
+
+.black-button {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.cyan-button {
+  background-color: #30D6E0 !important;
+  border-color: #30D6E0 !important;
+}
